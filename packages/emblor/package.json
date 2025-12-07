@@ -18,7 +18,7 @@
     "dist"
   ],
   "scripts": {
-    "prepare": "pnpm turbo build --filter emblor",
+    "prepare": "turbo build --filter emblor",
     "typecheck": "tsc --noEmit",
     "build": "run-p build:*",
     "build:tsup": "tsup --dts --minify",
@@ -26,7 +26,7 @@
     "dev": "tsup --watch --dts",
     "format": "prettier --write .",
     "prettier-check": "prettier --check \"**/*.{ts,tsx,md}\"",
-    "release": "pnpm run build && changeset publish"
+    "release": "npm run build && changeset publish"
   },
   "keywords": [
     "shadcn",
